@@ -1,0 +1,606 @@
+
+/*$red: #690000;*/
+
+html,
+body{
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #504949;
+}
+
+h2{
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+button{
+  border: none;
+  color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: .3rem;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
+.container{
+  max-width: 53.33rem;
+  margin: 0 auto;
+}
+
+header .container{
+  padding: .66rem 0;
+  display: flex;
+}
+
+header span{
+  padding: .88rem 0;
+  font-size: 1.23rem;
+  margin-top: .3rem
+}
+
+header #colmar{
+  font-weight: 700;
+  color: #4C4C4C;
+}
+
+header #academy{
+  color: #690000;
+}
+
+header .logo img{
+  height: 3rem;
+  padding-left: 1.3rem;
+  header-top: .3rem;
+}
+
+header nav{
+  text-align: right;
+  flex-grow: 1;
+  padding-top: .88rem;
+}
+
+header nav button{
+  padding: .44rem;
+  color: #504949;
+  background-color: white;
+}
+
+header nav button:hover{
+  background: rgba(0,0,0,0);
+	color: #690000;
+	box-shadow: inset 0 0 0 3px #690000;
+  border-radius: 0.3rem;
+}
+
+header .mobile-logo{
+  display: none;
+}
+
+.mobile-spacing{
+  display: none;
+}
+
+.banner{
+  background-color: #D7D7D7;
+  display: flex;
+  width: 100%;
+}
+
+.banner .studying{
+  padding: 1.77rem 2.22rem 1.77rem 1.3rem;
+  flex-basis: 60%;
+}
+
+.banner .studying img{
+  width: 100%;
+  height: auto;
+}
+
+.banner .text-content{
+  flex-basis: 40%;
+  line-height: 2rem;
+}
+
+.banner .text-content h2{
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner .text-content h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.banner .text-content button{
+	background: #690000;
+  padding: .6rem 6rem;
+  white-space: nowrap;
+}
+
+.banner .text-content button:hover{
+  background: rgba(0,0,0,0);
+	color: #690000;
+	box-shadow: inset 0 0 0 3px #690000;
+}
+
+.information-main{
+  display: flex;
+  width: 100%;
+}
+
+.information-main .practicing{
+  padding: 1.77rem 1.33rem;
+  flex-basis: 60%;
+  line-height: 1rem;
+}
+
+.information-main .practicing img{
+  width: 100%;
+  height: auto;
+}
+
+.information-main .practicing h2{
+  padding-top: 1.77rem;
+  padding-bottom: 1.33rem;
+  font-size: 1.55rem
+}
+
+.information-main .practicing h4{
+  font-size: .77rem;
+  font-weight: 300;
+  padding-bottom: 1.33rem;
+}
+
+.information-main .practicing h5{
+  font-size: .65rem;
+  font-weight: 500;
+  padding-bottom: 1.33rem;
+}
+
+.information-main .side-information{
+  flex-basis: 40%;
+  flex-direction: column;
+  /*padding-top: 1.77rem;*/
+  border-left: 2px solid #D7D7D7;
+}
+
+.information-mobile{
+  display: none;
+}
+
+ /*this side information works for both thesis and the practicing side boxes*/
+ .side-information .text-box{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2rem;
+  line-height: 1rem;
+  width: 51%;
+}
+
+ .side-information h2{
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+}
+
+ .side-information h3{
+  font-size: .66rem;
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+
+.side-information button:after {
+	top: -100%;
+	left: 0px;
+	width: 8rem;
+	position: absolute;
+	background: #690000;
+  color: white;
+	content: 'It\'\s good for you :)';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+  padding: .6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+
+.side-information button{
+   font-size: .66rem;
+   color: #690000;
+   padding: .6rem;
+   width: 8rem;
+   background: white;
+   border: 1px #690000 solid;
+}
+
+.side-information button:hover{
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
+
+ .side-information img{
+  width: 35%;
+  padding: .88rem;
+}
+
+#orientation-date{
+  padding-top: .88rem;
+}
+
+/*hover animations over the side boxes*/
+.information-main .side-information .side-box{
+  transition: all 1s ease-in-out;
+}
+
+
+.information-main .side-information .side-box:hover{
+  background-color: #D7D7D7;
+}
+
+.information-main .side-information .side-box h4{
+  transition: font-weight 500ms ease;
+}
+
+.information-main .side-information .side-box h4:hover{
+  font-weight: 700;
+}
+
+/*learning boxes*/
+.learning{
+  background-color: rgba(215, 215, 215, 0.54);
+  padding-bottom: 2.33rem;
+}
+
+.learning h2{
+  padding: 2.4rem 0;
+  text-align: center;
+}
+
+.learning-boxes{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.learning-boxes .box{
+  transition: box-shadow 250ms ease;
+}
+
+.learning-boxes .box:hover{
+  box-shadow: -12px -8px 5px 0px rgba(0,0,0,0.20);
+}
+
+.box{
+  flex-basis: 28%;
+  padding-right: 1.33rem;
+  padding-bottom: 1rem;
+}
+
+.box img{
+  flex-basis: 30%;
+  height: 7.77rem;
+}
+
+.box .text-box{
+  background-color: white;
+  padding: .88rem .88rem 0rem .88rem;
+  height: 50%;
+}
+
+.box .text-box h3{
+  font-size: 1.06rem;
+  font-weight: 600;
+  padding: .88rem 0;
+}
+
+.box .text-box h4{
+  font-size: .80rem;
+  font-weight: 300;
+  /*padding-top: .44rem;*/
+  color: rgb(170, 164, 164);
+}
+
+.box .text-box h5{
+  font-size: .80rem;
+  font-weight: 300;
+  padding: .88rem 0; /*originally .44rem 0*/
+  line-height: 1.1rem;
+  color: rgb(170, 164, 164);
+}
+
+.learning .mobile-boxes{
+  display: none;
+}
+
+.thesis{
+  display: flex;
+  width: 100%;
+  padding-bottom: 2.33rem;
+  padding-left: 1.33rem;
+}
+
+#thesis-title{
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.thesis .video-box{
+  flex-basis: 60%;
+  padding-right: .88rem;
+}
+
+.thesis video{
+  width: 100%;
+  height: auto;
+}
+
+.thesis .video-box .text-box h3{
+  padding: 1.33rem 0;
+  font-weight: 600;
+}
+
+.thesis .video-box .text-box h4{
+  font-size: .80rem;
+  line-height: 1.04rem;
+}
+
+.thesis .side-information{
+  flex-basis: 40%;
+  padding-left: .88rem;
+}
+
+.thesis .side-information h3{
+  padding-top: .70rem;
+}
+
+.mobile-thesis{
+  display: none;
+}
+
+footer{
+  border-top: 1px solid #D7D7D7;
+  display: flex;
+  padding: 1rem 0 3rem 2rem;
+}
+
+footer h4{
+  font-size: .66rem;
+  flex-grow: 1;
+}
+
+footer span{
+  font-size: .66rem;
+  text-align: right;
+  padding-right: .55rem;
+}
+
+/*mobile iteration*/
+@media only screen and (min-width:320px) and (max-width:426px){
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+header .logo .container{
+    display: none;
+}
+
+header .mobile-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+}
+
+header .mobile-logo img:nth-child(1n+2){
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: all 0.3s;
+  border-bottom: 2px solid #690000;
+}
+
+header .mobile-logo img:hover:nth-child(1n+2){
+  transform: translateY(-10px);
+  border-bottom: 5px solid #690000;
+  }
+
+.banner .studying{
+  padding: 0;
+}
+
+.banner{
+  display: block;
+  text-align:center;
+}
+
+.banner .text-content {
+  line-height: 1.5rem;
+  padding: 1.77rem 0;
+}
+
+.banner .text-content h2{
+  margin-top: 1.7rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.banner .text-content h3{
+  margin-bottom: 1.55rem;
+  font-size: 1.1rem;
+}
+
+.banner .text-content span{
+  color: white;
+  background-color: #a7a5a5;
+  padding: .6rem 5.4rem;
+}
+
+.information-main{
+  display: none;
+}
+
+.information-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.information-mobile .information-box{
+  padding-top: 1.55rem;
+}
+
+.information-mobile .information-box:last-child{
+  padding-bottom: 1.55rem;
+}
+
+.information-mobile .information-box .text-box h4:nth-last-child(2){
+  padding-bottom: 2rem;
+}
+
+.information-mobile .information-box img{
+  width: 90%;
+}
+
+.information-box .text-box{
+  text-align: center;
+  display: block;
+}
+
+.information-box .text-box h2{
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: .77rem;
+}
+
+.information-box .text-box h3{
+  font-size: .88rem;
+  font-weight: 500;
+  padding: .5rem 0;
+}
+
+.information-box .text-box button:after {
+	top: -100%;
+	left: 0px;
+	width: 8rem;
+	position: absolute;
+	background: #690000;
+  color: white;
+	content: 'It\'\s good for you :)';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+  padding: .6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+
+.information-box .text-box button{
+   font-size: .66rem;
+   color: #690000;
+   padding: .6rem;
+   width: 8rem;
+   background: white;
+   border: 3px #690000 solid;
+}
+
+.information-box .text-box button:focus{
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
+
+.learning{
+  width: 100%;
+}
+
+.learning-boxes{
+  display: none;
+}
+
+.learning .mobile-boxes{
+  display: block;
+}
+
+.mobile-boxes .mobile-box{
+  padding-bottom: .66rem;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.mobile-boxes .mobile-box button{
+  background-color: rgba(129, 123, 123, 0.54);
+  padding: 1rem;
+  width: 90%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+
+.mobile-boxes .mobile-box .course-info ul{
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 1rem;
+  display: none;
+}
+
+/*why doesn't this work?*/
+.mobile-boxes .mobile-box button:hover{
+  color: #690000;
+  background: rgba(0,0,0,0);
+  border: 3px #690000 solid;
+}
+
+.mobile-boxes .mobile-box button:focus + .course-info ul{
+  display: block;
+  border: 3px rgba(129, 123, 123, 0.54) dotted;
+  height: 100%;
+  animation: fadeIn 1s,
+              grow 1s;
+}
+
+.thesis,
+#thesis-title{
+  padding-left: 0;
+  display: none;
+}
+
+.mobile-thesis{
+  display: block;
+}
+.mobile-thesis h2{
+  padding: 1.77rem 0;
+}
+
+.mobile-thesis video{
+  width: 100%;
+}
+
+footer{
+  border-top: 0px;
+}
+
+footer span{
+  display: none;
+}
+
+footer h4{
+  padding-top: 1.77rem;
+}
+
+}
